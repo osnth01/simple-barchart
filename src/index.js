@@ -1,6 +1,14 @@
 import * as d3 from 'd3'
 
-var data = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+function generateRandomNumber(min, max) {
+  return Math.floor((Math.random() * max) + min)
+}
+
+var data = []
+
+for (var i = 0; i < 10; i++) {
+  data.push(generateRandomNumber(1, 10))
+}
 
 const size = 400
 
