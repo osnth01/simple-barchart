@@ -4,11 +4,17 @@ function generateRandomNumber(min, max) {
   return Math.floor((Math.random() * max) + min)
 }
 
-var data = []
+function generateRandomData(min, max) {
+  var data = []
 
-for (var i = 0; i < 10; i++) {
-  data.push(generateRandomNumber(1, 10))
+  for (var i = 0; i < 10; i++) {
+    data.push(Math.floor((Math.random() * max) + min))
+  }
+
+  return data
 }
+
+var data = generateRandomData(1, 10)
 
 const size = 400
 
