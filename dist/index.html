@@ -3,11 +3,26 @@
 <head>
   <meta charset="utf-8">
   <title>D3 - Simple barchart</title>
+  <style>
+    #update-button {
+      font-size: 20px;
+    }
+    #update-button:hover {
+      cursor: pointer;
+    }
+  </style>
 </head>
 <body>
-  <h3>Practice D3 - Simple barchart</h3>
+  <div>
+    <h3>Practice D3 - Simple barchart</h3>
+  </div>
 
-  <svg width="400" height="400"></svg>
+  <div>
+    <svg id="chart" width="400" height="400"></svg>
+  </div>
+  <div>
+    <button id="update-button">Update graph</button>
+  </div>
 
   <script src="bundle.js"></script>
 </body>
